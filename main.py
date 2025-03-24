@@ -104,3 +104,4 @@ chosen_stat = st.multiselect(
 # bar chart PTS, AST, TRB for chosen teams
 stats_to_bar = teams_stats[chosen_stat]
 st.bar_chart(stats_to_bar.T, stack=False)
+

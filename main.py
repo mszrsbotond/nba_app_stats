@@ -5,7 +5,7 @@ import pandas as pd
 st.title("NBA Stats by \nmszrsbotond")
 # load in the database
 def load_data():
-    df = pd.read_csv(r"C:\Documents\Programozas\python\libraries\streamlit\database_24_25.csv")
+    df = pd.read_csv(r"database_24_25.csv")
     df = df.drop(columns=["Opp", "Res", "FT%"])
     return df.round(2)
 
